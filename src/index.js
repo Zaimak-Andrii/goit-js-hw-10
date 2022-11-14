@@ -24,7 +24,6 @@ function searchHandler(evt) {
 
   fetchCountries(name).then(showResult).catch(searchError);
 }
-
 function showResult(data) {
   if (data.length >= MAX_SHOW_COUNTRIES) {
     clearCountry();
